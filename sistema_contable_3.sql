@@ -279,19 +279,27 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'NO_ZERO_IN_DATE,NO_ZERO_DATE,NO_ENGINE_SUBSTITUTION' */ ;
 DELIMITER ;;
-CREATE DEFINER=`root`@`localhost` PROCEDURE `insertar_datos`(IN `id_caja` INT, IN `monto_ingreso` DOUBLE)
-BEGIN
+CREATE  PROCEDURE `insertar_datos`(IN `id_caja` INT, IN `monto_ingreso` DOUBLE)
+BEGIN
 
-
-INSERT INTO ingreso(id_caja,fecha,monto_ingreso)
 
-
-VALUES(id_caja,CURRENT_DATE,monto_ingreso);
 
-
-
 
-
+INSERT INTO ingreso(id_caja,fecha,monto_ingreso)
+
+
+
+
+VALUES(id_caja,CURRENT_DATE,monto_ingreso);
+
+
+
+
+
+
+
+
+
 END ;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
