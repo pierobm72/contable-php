@@ -39,7 +39,7 @@ if (isset($_SESSION['dni_admin'])) {
         </div>
         <div class="row mb-3">
           <div class="col-sm-10" id="login">
-            <input type="password" class="form-control" id="contra_log" min="3" max="15" pattern="[a-zA-z]{0,9}" placeholder="Ingresa tu contraseña :" name ="contraseña">
+            <input type="password" class="form-control" id="contra_log" min="3" max="15" pattern="[a-zA-z]{0,9}" placeholder="Contraseña :" name ="contraseña">
           </div>
           
         </div>
